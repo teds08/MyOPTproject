@@ -1,0 +1,41 @@
+body {
+    background: url(https://miro.medium.com/v2/resize:fit:679/1*dXZlIr4SkImf5KC_eYhLKw.gif);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    text-align: center;
+    background:linear-gradient(135deg, rgba(255, 255, 255,  0.1));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 3px 0 rgba(0, 0, 0, 0.37);
+}
+
+#display {
+    width: 250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1.5em;
+    margin-top: 10px;
+    border-radius: 10px;
+    
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+}
