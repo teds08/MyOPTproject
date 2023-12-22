@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" type="x-icon" href="https://cdn-icons-png.flaticon.com/256/5448/5448404.png">
+    <title>login Form</title>
+</head>
+<body>
+    <section class="container">
+        <div class="box">
+            <h1>Enter a Password</h1>
+            <input type="password" id="password" placeholder="Password">
+            <button type="submit" onclick="password()">Log in</button>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function password(){
+            const Mypassword = 12345;
+            
+            let password =  document.getElementById("password").value;
+            if (Mypassword == password){    
+                console.log(password);
+                window.location.href="index.html";
+            }
+            else if (password == "" || password == null){
+                alert("Unsaon nimo pag login kung wala ka nag butang ug Password! murag jud kag JUST NOW!");
+            }
+            else if (password != Mypassword){
+                alert("Hinay-hinay daw ug type kay dili mao imong password!");
+            }
+        }
+    </script>
+</body>
+</html>
